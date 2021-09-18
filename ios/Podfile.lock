@@ -1,4 +1,6 @@
 PODS:
+  - aes_ecb_pkcs5_flutter (0.0.1):
+    - Flutter
   - biometric_storage (0.0.1):
     - Flutter
   - connectivity_plus (0.0.1):
@@ -61,8 +63,6 @@ PODS:
     - GoogleUtilities/UserDefaults (~> 7.4)
     - PromisesObjC (< 3.0, >= 1.2)
   - Flutter (1.0.0)
-  - flutter_aes_ecb_pkcs5 (0.0.1):
-    - Flutter
   - flutter_inappwebview (0.0.1):
     - Flutter
     - flutter_inappwebview/Core (= 0.0.1)
@@ -110,13 +110,6 @@ PODS:
     - GoogleUtilities/Logger
   - image_picker (0.0.1):
     - Flutter
-  - JCore (2.7.1)
-  - JPush (3.7.0):
-    - JCore (< 3.0.0, >= 2.0.0)
-  - jpush_flutter (0.0.2):
-    - Flutter
-    - JCore (= 2.7.1)
-    - JPush (= 3.7.0)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -141,6 +134,7 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
+  - aes_ecb_pkcs5_flutter (from `.symlinks/plugins/aes_ecb_pkcs5_flutter/ios`)
   - biometric_storage (from `.symlinks/plugins/biometric_storage/ios`)
   - connectivity_plus (from `.symlinks/plugins/connectivity_plus/ios`)
   - device_info (from `.symlinks/plugins/device_info/ios`)
@@ -150,11 +144,9 @@ DEPENDENCIES:
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - FirebaseFirestore (from `https://github.com/invertase/firestore-ios-sdk-frameworks.git`, tag `8.5.0`)
   - Flutter (from `Flutter`)
-  - flutter_aes_ecb_pkcs5 (from `.symlinks/plugins/flutter_aes_ecb_pkcs5/ios`)
   - flutter_inappwebview (from `.symlinks/plugins/flutter_inappwebview/ios`)
   - flutter_qr_scan (from `.symlinks/plugins/flutter_qr_scan/ios`)
   - image_picker (from `.symlinks/plugins/image_picker/ios`)
-  - jpush_flutter (from `.symlinks/plugins/jpush_flutter/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
   - permission_handler (from `.symlinks/plugins/permission_handler/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
@@ -173,14 +165,14 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
-    - JCore
-    - JPush
     - nanopb
     - OrderedSet
     - PromisesObjC
     - Reachability
 
 EXTERNAL SOURCES:
+  aes_ecb_pkcs5_flutter:
+    :path: ".symlinks/plugins/aes_ecb_pkcs5_flutter/ios"
   biometric_storage:
     :path: ".symlinks/plugins/biometric_storage/ios"
   connectivity_plus:
@@ -196,16 +188,12 @@ EXTERNAL SOURCES:
     :tag: 8.5.0
   Flutter:
     :path: Flutter
-  flutter_aes_ecb_pkcs5:
-    :path: ".symlinks/plugins/flutter_aes_ecb_pkcs5/ios"
   flutter_inappwebview:
     :path: ".symlinks/plugins/flutter_inappwebview/ios"
   flutter_qr_scan:
     :path: ".symlinks/plugins/flutter_qr_scan/ios"
   image_picker:
     :path: ".symlinks/plugins/image_picker/ios"
-  jpush_flutter:
-    :path: ".symlinks/plugins/jpush_flutter/ios"
   path_provider:
     :path: ".symlinks/plugins/path_provider/ios"
   permission_handler:
@@ -227,6 +215,7 @@ CHECKOUT OPTIONS:
     :tag: 8.5.0
 
 SPEC CHECKSUMS:
+  aes_ecb_pkcs5_flutter: a82e6ecc47654000805ad9d094a8cd29e4bf9667
   biometric_storage: 1400f1382af3a4cc2bf05340e13c3d8de873ceb9
   connectivity_plus: 5f0eb61093bec56935f21a1699dd2758bc895587
   device_info: d7d233b645a32c40dfdc212de5cf646ca482f175
@@ -239,16 +228,12 @@ SPEC CHECKSUMS:
   FirebaseFirestore: 69e4f06a375080a56ffd390fb034467b58ddeda0
   FirebaseInstallations: 0ede6ffcd215b8f93c19d9b06c1c54e2d4107e98
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
-  flutter_aes_ecb_pkcs5: fb682a7bb13f29cfbb33f88f7e1ed2211eacf5db
   flutter_inappwebview: bfd58618f49dc62f2676de690fc6dcda1d6c3721
   flutter_qr_scan: f7c8c497584bbf395efd56ffcc3a60d27ec9de82
   GoogleAppMeasurement: 8d10c1c470fcb0e5143ed74fddd164f0a0384800
   GoogleDataTransport: 85fd18ff3019bb85d3f2c551d04c481dedf71fc9
   GoogleUtilities: 3df19e3c24f7bbc291d8b5809aa6b0d41e642437
   image_picker: 50e7c7ff960e5f58faa4d1f4af84a771c671bc4a
-  JCore: 9d5bda3a172c65bbe14f2806ab0f6246f8a06065
-  JPush: 1fd7a326e7e6588eba517659ce1b79a144e54938
-  jpush_flutter: d5fd523a73277ed66d453fc7ac1c981d1fa525e2
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   OrderedSet: aaeb196f7fef5a9edf55d89760da9176ad40b93c
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
@@ -263,4 +248,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 54d14ef5a14a0b3c64cc6d6bfeff28f02dcce905
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.0

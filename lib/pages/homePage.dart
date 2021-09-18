@@ -93,6 +93,7 @@ class _HomePageState extends State<HomePage> {
         _tabIndex = initialTab;
       });
     }
+    // todo: we need to rebuild all module pages for this initial route
     // final route = params['route'];
     // print(route);
     // if (route != null) {
@@ -219,10 +220,10 @@ class _HomePageState extends State<HomePage> {
         currentIndex: _tabIndex,
         iconSize: 32,
         onTap: (index) {
+          _pageController.jumpToPage(index);
           setState(() {
             _tabIndex = index;
           });
-          _pageController.jumpToPage(index);
         },
         type: BottomNavigationBarType.fixed,
         items: _buildNavItems(pages),

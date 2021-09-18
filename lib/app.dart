@@ -54,7 +54,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:get_storage/get_storage.dart';
-// import 'package:jpush_flutter/jpush_flutter.dart';
 import 'package:polkawallet_sdk/api/types/networkParams.dart';
 import 'package:polkawallet_sdk/api/types/walletConnect/pairingData.dart';
 import 'package:polkawallet_sdk/api/types/walletConnect/payloadData.dart';
@@ -508,7 +507,7 @@ class _WalletAppState extends State<WalletApp> {
       } on PlatformException {
         // Platform messages may fail but we ignore the exception
         print('falied to get initial uri');
-      } on FormatException catch (err) {
+      } on FormatException {
         if (!mounted) return;
         print('malformed initial uri');
       }
